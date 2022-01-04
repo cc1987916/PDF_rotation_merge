@@ -56,5 +56,6 @@ for path in pdf_path:
             page = pdf.getPage(i).rotateClockwise(0)
             writer1.addPage(page)
 
-with open(r"C:\Users\GK\Desktop\test2\new.pdf", "wb") as f:
+with open(r"C:\Users\GK\Desktop\test2\new.pdf", "wb+")as f:
     writer1.write(f)
+
